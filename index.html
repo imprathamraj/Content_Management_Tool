@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media\icons8-heart-48.png">
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="media\production_id_4151856 (2160p).mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+
+
+
+  <div align="center" class="blog-area" ondragover="dragOver(event)" ondrop="drop(event)">
+    <h2>Blog Area</h2><br><hr><br><br><br>
+    <p>| | Drag and drop content elements here to create your blog | |</p>
+  </div>
+
+
+  <div class="container" align="center">
+
+
+    <div class="item text" draggable="true" ondragstart="dragStart(event)">
+      <h3>Draggable Text</h3>
+      <p>Drag and drop this text to the blog area.</p><br><br><br>
+      <label for="smallTextarea"></label>
+      <textarea id="smallTextarea" name="text" rows="10" cols="40"></textarea>
+    </div>
+
+
+
+
+    <div class="item image" draggable="true" ondragstart="dragStart(event)">
+      <h3>Draggable Image</h3>
+      <p>Drag and drop this Image to the blog area.</p><br><br><br>
+      <img src="media\pexels-pixabay-163077.jpg" alt="Draggable Image" width="260" height="160">
+    </div>
+
+
+
+
+    <div class="item video" draggable="true" ondragstart="dragStart(event)">
+      <h3>Draggable Video</h3>
+      <p>Drag and drop this Video to the blog area.</p><br><br><br>
+      <video src="media\The Peanuts Movie _ _Get Down with Snoopy and Woodstock - Opening_ Clip _ Fox Family Entertainment.mp4" autoplay muted controls width="330" height="180"></video>
+    </div>
+
+
+
+
+    <div class="item audio" draggable="true" ondragstart="dragStart(event)">
+      <h3>Draggable Audio</h3>
+      <p>Drag and drop this Audio to the blog area.</p><br><br><br><br><br>
+      <audio src="media\Heeriye (Official Video) Jasleen Royal ft Arijit Singh_ Dulquer Salmaan_ Aditya Sharma _Taani Tanvir.mp3" controls  ></audio>
+    </div>
+  </div>
+  <br><br>
+  <div class="butt" align="center">
+  <button class="button" onclick="clearBlog()">Clear Blog</button>
+  </div>
+  <br><br><p align="center">| |  CREATED BY PRATHAM RAJ  | |</p>  <br>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
